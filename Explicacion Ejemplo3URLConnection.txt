@@ -1,0 +1,10 @@
+Instancias una nueva URL, con la direccion url del archivo que deseamos
+Instanciamos una conexion para establecer el enlace con el servidor, y lo mostramos por consola
+Creamos una nueva fecha que guarda la ultima modificacion del archivo y la muestra por consola tambien
+
+Se crea un Map de clave valor, para las cabeceras de la pagina
+Con un iterator recorremos todo el map y "mientras" haya un siguiente valor en el map
+se pasan por pantalla la clave y el valor
+
+Ahora se vuelve a mostrar por pantalla toda la informacion que tenemos en las conexiones
+y Se crea un buffered reader, para leer el flujo de datos de la pagina, y se vuelve a pasar por pantalla todos los datos

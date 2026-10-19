@@ -1,0 +1,10 @@
+Primero se instancia un nuevo URL y se setea el output.
+Se instancia un escaner para introducir datos y se guardan en las variables de nombre apellidos y luego se imprime la
+cadena entera impresa por consola
+Se instancia un printWrite que luego se conecta al php
+Se instancia un BufferedReader para que lea el flujo de entrada y se lo de a la conexion previa
+
+El siguiente parrafo, Crea la variable que va a recibir los datos y hace que se apunte a la informacion guardada en el
+servidor y luego se muestra por pantalla
+
+y por ultimo con dos catch que capturan las excepciones de URL mal escrita y una excepcion general de entrada y salida
