@@ -9,7 +9,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class ClienteEco {
- public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         String host = "localhost";
         int puerto = 6000; // Puerto remoto
 

@@ -15,11 +15,9 @@ public class cliente4 {
         boolean continuar = true;
 
         try (Scanner sc = new Scanner(System.in);
-             Socket cliente = new Socket(host, puerto);
-             DataInputStream flujoEntrada =
-                     new DataInputStream(cliente.getInputStream());
-             DataOutputStream flujoSalida =
-                     new DataOutputStream(cliente.getOutputStream())) {
+                Socket cliente = new Socket(host, puerto);
+                DataInputStream flujoEntrada = new DataInputStream(cliente.getInputStream());
+                DataOutputStream flujoSalida = new DataOutputStream(cliente.getOutputStream())) {
 
             InetAddress inetAddress = cliente.getInetAddress();
 
