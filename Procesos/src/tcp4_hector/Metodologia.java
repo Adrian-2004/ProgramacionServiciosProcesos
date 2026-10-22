@@ -1,4 +1,4 @@
-package tcp4_hector;
+package EjercicioPorMiCuentaFueraDeGitHub;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -12,9 +12,20 @@ public class Metodologia {
         // aquí creas una cadena ints y la rellenas por scanner en un bucle
         // y luego le pasas esa cadena a un string mas un " "
         for (int i = 0; i < primitiva.length; i++) {
-            primitiva[i] = sc.nextInt();
+            boolean condicion;
+            do {
+                condicion = false;
+                primitiva[i] = sc.nextInt();
+                for (int j = 0; j < i; j++) {
+                    if (primitiva[i] == primitiva[j]) {
+                        condicion = true;
+                        break;
+                    }
+                }
+            } while (condicion);
             cadena += primitiva[i] + " ";
         }
+
         return cadena;
     }
 
@@ -64,15 +75,17 @@ public class Metodologia {
                 break;
         }
 
-        // aquí comparas la primitiva devuelta con
+        // aquí comparas la primitiva devuelta con la que le pasa el cliente
         int contador = 0;
         boolean compTrue = false;
-        for (int k = 0; k < primitivaSol.length; k++) {
+        for (int k = 0; k < primitiva.length; k++) {
             for (int z = 0; z < primitivaSol.length; z++) {
-                if (primitiva[k] == primitivaSol[z])
+                if (primitiva[k] == primitivaSol[z]) {
                     contador++;
-                if (primitiva[k] == complementario)
-                    compTrue = true;
+                }
+            }
+            if (primitiva[k] == complementario) {
+                compTrue = true;
             }
         }
 
