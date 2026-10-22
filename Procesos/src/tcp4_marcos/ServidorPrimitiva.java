@@ -37,6 +37,7 @@ public class ServidorPrimitiva {
             cliente.close();
             System.out.println("Servidor desconectado correctamente, chao");
             
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
