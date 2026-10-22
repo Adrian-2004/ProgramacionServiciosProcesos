@@ -15,30 +15,30 @@ public class Metodologia {
             boolean condicion;
             do {
                 condicion = false;
-                System.out.println("Introduce un numero para la primi: ");
+                System.out.println("Introduce el número de primi [" + i + "]: ");
                 primitiva[i] = sc.nextInt();
-                
+
                 // Metodo para prevenir que un numero sea menor que 0 o mayor que 49
-                if (primitiva[i] < 0 || primitiva[i] > 49) {
+                if (primitiva[i] < 0 || primitiva[i] >= 49) {
                     throw new IllegalArgumentException(
-                        "Error: el numero debe estar entre 0 y 49."
-                    );
+                            "Error: el numero debe estar entre 0 y 49.");
                 }
-                
+
                 // Metodo para prevenir que se repitan numeros
                 for (int j = 0; j < i; j++) {
                     if (primitiva[i] == primitiva[j]) {
                         throw new IllegalArgumentException(
-                            "Error: no se pueden introducir numeros repetidos."
-                        );
+                                "Error: no se pueden introducir numeros repetidos.");
                     }
                 }
-                /*for (int j = 0; j < i; j++) {
-                    if (primitiva[i] == primitiva[j]) {
-                        condicion = true;
-                        break;
-                    }
-                }*/
+                /*
+                 * for (int j = 0; j < i; j++) {
+                 * if (primitiva[i] == primitiva[j]) {
+                 * condicion = true;
+                 * break;
+                 * }
+                 * }
+                 */
             } while (condicion);
             cadena += primitiva[i] + " ";
         }
