@@ -1,4 +1,4 @@
-package EjercicioPorMiCuentaFueraDeGitHub;
+package RESULTADOFINAL;
 
 import java.util.Random;
 import java.util.Scanner;
