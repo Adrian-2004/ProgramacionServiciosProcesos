@@ -1,4 +1,4 @@
-package EjercicioPorMiCuentaFueraDeGitHub;
+package RESULTADOFINAL;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class Metodologia {
             boolean condicion;
             do {
                 condicion = false;
-                System.out.println("Introduce un numero para la primi: ");
+                System.out.println("Introduce el número de primi [" + i + "]: ");
                 primitiva[i] = sc.nextInt();
 
                 // Metodo para prevenir que un numero sea menor que 0 o mayor que 49
