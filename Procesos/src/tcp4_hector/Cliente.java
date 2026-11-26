@@ -1,4 +1,4 @@
-package EjercicioPorMiCuentaFueraDeGitHub;
+package tcp4_hector;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
