@@ -87,6 +87,7 @@ while (continuar) {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
 
 }
